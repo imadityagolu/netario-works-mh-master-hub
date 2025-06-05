@@ -12,7 +12,7 @@ function JoinBoard() {
         <h1 className='text-3xl text-center'>Join ambitious professionals and <br></br>unlock your dream career today</h1>
         <p className='text-center mt-5'>Unlock your true potential and discover a world of opportunities that align <br></br>with your skills, interests, and aspirations</p>
 
-      {/* join us */}
+      {/* join us bar */}
       <div className='flex w-full text-center place-content-center items-center mt-8 gap-2'>
 
         <h1 className='flex w-80 bg-white p-3 rounded-3xl'>

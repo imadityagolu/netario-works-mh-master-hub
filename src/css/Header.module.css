@@ -1,0 +1,6 @@
+.slidercontainer {
+  overflow: hidden;
+  position: relative;
+  background-color: red;
+  border: 10px;
+}

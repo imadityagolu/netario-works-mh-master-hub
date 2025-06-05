@@ -9,127 +9,119 @@ import p3 from '../image/p3.png';
 function Clients() {
     return (
         <>
-            <div className='bg-gray-100 pt-15'>
+            <div className='bg-gray-100 pt-8 sm:pt-12 md:pt-15'>
 
               {/* header */}
-              <div className='place-content-center items-center text-center'>
-                <h1 className='text-5xl'>We are happy to work with incredible clients</h1>
-        
-                <p className='mt-8'>Fortune 500 companies and renowned global brands place their trust in our products, solutions,<br></br>and bespoke software development services.</p>
-        
+              <div className='place-content-center items-center text-center px-4 sm:px-6'>
+                <h1 className='text-3xl sm:text-4xl md:text-5xl'>
+                  We are happy to work with incredible clients
+                </h1>
+                <p className='mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base text-gray-600'>
+                  Fortune 500 companies and renowned global brands place their trust in our products, solutions,
+                  <br></br> and bespoke software development services.
+                </p>
+
                 {/* icon image */}
-                <div className='flex items-center place-content-center text-center mt-5'>
-                  <img src={logo} className='w-180'></img>
+                <div className='flex items-center justify-center text-center mt-4 sm:mt-5'>
+                  <img src={logo} className='w-150 sm:w-130 md:w-150' alt="Company Logo" />
                 </div>
+
               </div>
               
-              {/* image collarge */}
-              <div className='flex px-2 mt-5 gap-5 justify-center'>
-              
+              {/* image collage */}
+              <div className='flex flex-col md:flex-row px-4 sm:px-20 mt-6 sm:mt-8 gap-4 sm:gap-5 justify-center'>
+
                 {/* left box */}
-                <div className='w-[45%]'>
+                <div className='w-full md:w-[45%] flex flex-col'>
 
                   <div>
-                    <h1 className='text-3xl'>How It Works</h1>
+                    <h1 className='text-2xl sm:text-3xl font-bold'>How It Works</h1>
                   </div>
 
-                  {/* box 1*/}
-                  <div className='flex p-5 gap-4'>
-              
-                  {/*serial no.*/}
-                  <div className='flex items-center place-content-center text-center'>
-                    <h1 className='bg-gray-100 items-center rounded-4xl text-gray-400 text-7xl p-4'>01</h1>
-                  </div>
-              
-                  {/*content*/}
-                  <div className='flex rounded-xl p-3 bg-white shadow-xl gap-2'>
-
-                    <div className='items-center place-content-center'>
-                    <FaArrowLeft  className='text-blue-400 mt-2 bg-gray-200 rounded-3xl text-5xl p-2' />
+                  {/* box 1 */}
+                  <div className='flex flex-row-reverse sm:flex-row p-3 sm:p-5 gap-3 sm:gap-4'>
+                    {/* serial no. */}
+                    <div className='flex items-center justify-center text-center'>
+                      <h1 className='bg-gray-100 rounded-3xl text-gray-400 text-5xl sm:text-6xl md:text-7xl p-3 sm:p-4'>01</h1>
                     </div>
-
-                    <div className='pr-3'>
-                    <h1 className='text-2xl'>Sign Up and create Account</h1>
-                    <h1 className='text-md'>Fill out your details and showcase your skills.</h1>
-                    </div>
-                  </div>
-              
-                  </div>
-                  
-                  {/* box 2*/}
-                  <div className='flex p-5 gap-4'>
-              
-                  {/*content*/}
-                  <div className='flex rounded-xl p-3 bg-white shadow-xl gap-2'>
-
-                    <div className='items-center place-content-center'>
-                    <FaArrowUp  className='text-orange-400 mt-2 bg-orange-200 rounded-3xl text-5xl p-2' />
-                    </div>
-
-                    <div className='pr-3'>
-                    <h1 className='text-2xl'>Upload Your Portfolio</h1>
-                    <h1 className='text-md'>Add Your resume, videos, and more.</h1>
+                    {/* content */}
+                    <div className='flex rounded-xl p-3 bg-white shadow-xl gap-2 flex-1'>
+                      <div className='flex items-center justify-center'>
+                        <FaArrowLeft className='text-blue-400 bg-gray-200 rounded-3xl text-3xl sm:text-4xl md:text-5xl p-2' />
+                      </div>
+                      <div className='pr-2 sm:pr-3'>
+                        <h1 className='text-lg sm:text-xl md:text-2xl font-bold'>Sign Up and Create Account</h1>
+                        <p className='text-xs sm:text-sm md:text-base'>Fill out your details and showcase your skills.</p>
+                      </div>
                     </div>
                   </div>
                   
-                  {/*serial no.*/}
-                  <div className='flex items-center place-content-center text-center'>
-                    <h1 className='bg-gray-100 flex items-center place-content-center text-center rounded-4xl text-gray-400 text-7xl p-4'>02</h1>
-                  </div>
-              
-                  </div>
-
-                  {/* box 3*/}
-                  <div className='flex p-5 gap-4'>
-              
-                  {/*serial no.*/}
-                  <div className='flex items-center place-content-center text-center'>
-                    <h1 className='bg-gray-100 items-center rounded-4xl text-gray-400 text-7xl p-4'>03</h1>
-                  </div>
-              
-                  {/*content*/}
-                  <div className='flex rounded-xl p-3 bg-white shadow-xl gap-2'>
-
-                    <div className='items-center place-content-center'>
-                    <DiDatabase  className='text-purple-400 mt-2 bg-purple-200 rounded-3xl text-5xl p-2' />
+                  {/* box 2 */}
+                  <div className='flex p-3 sm:p-5 gap-3 sm:gap-4'>
+                    {/* content */}
+                    <div className='flex rounded-xl p-3 bg-white shadow-xl gap-2 flex-1'>
+                      <div className='flex items-center justify-center'>
+                        <FaArrowUp className='text-orange-400 bg-orange-200 rounded-3xl text-3xl sm:text-4xl md:text-5xl p-2' />
+                      </div>
+                      <div className='pr-2 sm:pr-3'>
+                        <h1 className='text-lg sm:text-xl md:text-2xl font-bold'>Upload Your Portfolio</h1>
+                        <p className='text-xs sm:text-sm md:text-base'>Add your resume, videos, and more.</p>
+                      </div>
                     </div>
-
-                    <div className='pr-3'>
-                    <h1 className='text-2xl'>Get Discovered</h1>
-                    <h1 className='text-md'>Let employers find and contact you.</h1>
+                    {/* serial no. */}
+                    <div className='flex items-center justify-center text-center'>
+                      <h1 className='bg-gray-100 rounded-3xl text-gray-400 text-5xl sm:text-6xl md:text-7xl p-3 sm:p-4'>02</h1>
                     </div>
                   </div>
-              
+
+                  {/* box 3 */}
+                  <div className='flex flex-row-reverse sm:flex-row p-3 sm:p-5 gap-3 sm:gap-4'>
+                    {/* serial no. */}
+                    <div className='flex items-center justify-center text-center'>
+                      <h1 className='bg-gray-100 rounded-3xl text-gray-400 text-5xl sm:text-6xl md:text-7xl p-3 sm:p-4'>03</h1>
+                    </div>
+                    {/* content */}
+                    <div className='flex rounded-xl p-3 bg-white shadow-xl gap-2 flex-1'>
+                      <div className='flex items-center justify-center'>
+                        <DiDatabase className='text-purple-400 bg-purple-200 rounded-3xl text-3xl sm:text-4xl md:text-5xl p-2' />
+                      </div>
+                      <div className='pr-2 sm:pr-3'>
+                        <h1 className='text-lg sm:text-xl md:text-2xl font-bold'>Get Discovered</h1>
+                        <p className='text-xs sm:text-sm md:text-base'>Let employers find and contact you.</p>
+                      </div>
+                    </div>
                   </div>
 
                 </div>
-                      
+                
                 {/* right box */}
-                <div className='w-[45%]'>
-              
+                <div className='w-full md:w-[45%] flex flex-col gap-4 px-15'>
+
                   {/* image box 1 2 */}
-                  <div className='flex gap-2'>
+                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-0'>
 
                     {/* image 1 */}
-                    <div className="rounded-2xl w-100 h-[300px] bg-cover bg-center inset-shadow-lg" style={{ backgroundImage: `url(${p1})` }}>
+                    <div className='rounded-2xl w-full sm:w-50 h-48 sm:h-64 md:h-[300px] bg-cover bg-center inset-shadow-lg' style={{ backgroundImage: `url(${p1})` }}>
                     </div>
-                  
+                    
                     {/* image 2 */}
-                    <div className="rounded-2xl w-150 h-[400px] bg-cover bg-center inset-shadow-lg" style={{ backgroundImage: `url(${p2})` }}>
+                    <div className='rounded-2xl w-full sm:w-1/2 h-64 sm:h-80 md:h-[400px] bg-cover bg-center inset-shadow-lg' style={{ backgroundImage: `url(${p2})` }}>
                     </div>
-                  
                   </div>
                   
                   {/* image 3 */}
-                  <div className='flex bg-white rounded-4xl p-3 items-center place-content-center mt-[-10px] w-100'>
-                    <div className="rounded-2xl w-60 h-[90px] bg-cover bg-center inset-shadow-lg" style={{ backgroundImage: `url(${p3})` }}>
+                  <div className='flex bg-white rounded-3xl p-3 items-center justify-center mt-0 sm:mt-[-10px] w-full'>
+
+                    <div className='rounded-2xl w-24 sm:w-60 md:w-60 h-16 sm:h-21 md:h-[90px] bg-cover bg-center inset-shadow-lg' style={{ backgroundImage: `url(${p3})` }}>
                     </div>
-                    <div className='items-center place-content-center'>
-                      <h1 className='text-blue-500 text-xl font-bold'>10K+</h1>
-                      <h1 className='text-xl text-gray-400'>Job Seekers</h1>
+
+                    <div className='ml-3 text-center sm:text-left'>
+                      <h1 className='text-blue-500 text-lg sm:text-xl font-bold'>10K+</h1>
+                      <p className='text-sm sm:text-base text-gray-400'>Job Seekers</p>
                     </div>
+                    
                   </div>
-              
+
                 </div>
 
               </div>
@@ -140,4 +132,3 @@ function Clients() {
 }
 
 export default Clients;
-

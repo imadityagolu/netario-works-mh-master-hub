@@ -7,10 +7,10 @@ function Footer() {
     return(
         <>
     {/* footer */}
-    <div className='flex gap-20 justify-between bg-linear-to-br from-yellow-500 to-yellow-100 w-full pt-8 px-30 pb-4'>
+    <div className='flex lg:gap-20 sm:gap-10 justify-between bg-linear-to-br from-yellow-500 to-yellow-100 w-full pt-8 lg:px-30 pb-4 sm:px-10'>
 
       {/* information */}
-      <div className='w-110'>
+      <div className='lg:w-110'>
 
       {/* info */}
       <div className='text-base/10'>

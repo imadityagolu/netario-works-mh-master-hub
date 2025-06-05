@@ -23,7 +23,7 @@ function Portfolios() {
               </div>
         
               {/* portfolio image cards */}
-              <div className='flex gap-5 mt-10 px-10'>
+              <div className='flex flex-col md:flex-row gap-4 md:gap-5 mt-6 md:mt-8 px-4 md:px-6'>
         
                 {/* image 1*/}
                 <div

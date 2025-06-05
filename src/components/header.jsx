@@ -23,7 +23,7 @@ function Header() {
         <nav className='flex justify-between items-center'>
           <h1 className="text-2xl sm:text-3xl text-white font-bold">MH. Master Hub</h1>
 
-          <div className='hidden md:flex gap-5 text-base sm:text-lg'>
+          <div className='hidden md:flex gap-5 text-base sm:text-md'>
             <a href="" className="hover:underline">Create Resume</a>
             <a href="" className="hover:underline">Skillset</a>
             <a href="" className="hover:underline">Partnered Job Board</a>
@@ -94,13 +94,14 @@ function Header() {
           </div>
         </div>
 
-        {/* images */}
-        <div className='flex flex-wrap mt-20 w-full items-center justify-center md:hidden'>
+        {/* small screen images */}
+        <div className='flex flex-wrap mt-20 w-full items-center justify-center md:hidden slider-container'>
           <img src={img1} alt="Image 1" className="w-100 sm:w-48 h-auto object-cover" />
           <img src={img2} alt="Image 2" className="w-100 sm:w-48 h-auto object-cover" />
           <img src={img3} alt="Image 3" className="w-100 sm:w-48 h-auto object-cover" />
         </div>
-
+        
+        {/* big screen image*/}
         <div className='hidden md:flex flex-wrap mt-20 w-full items-center justify-center'>
           <img src={img1} alt="Image 1" className="w-80 object-cover" />
           <img src={img2} alt="Image 2" className="w-80 object-cover" />

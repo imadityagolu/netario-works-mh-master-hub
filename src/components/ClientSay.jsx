@@ -16,10 +16,10 @@ function ClientSay() {
               </div>
         
               {/* client box */}
-              <div className='flex px-10 mt-5 gap-5 justify-center'>
+              <div className='flex lg:flex-row px-10 mt-5 lg:gap-5 sm:gap-0 justify-center sm:flex-col'>
         
                 {/* left box */}
-                <div className='bg-gray-800 text-white w-[45%] rounded-xl'>
+                <div className='bg-gray-800 text-white w-[45%] rounded-xl sm:w-full'>
         
                   <div className='flex justify-around mt-5 px-30'><h1>Manuel Rikob</h1><h1>CEO of Intel</h1></div>
         
@@ -27,7 +27,7 @@ function ClientSay() {
                     <h1 className='text-3xl'>Working with Master in me has<br></br> been an incredibly painless and<br></br> enjoyable experience</h1>
                   </div>
         
-                  <div className='flex gap-1 place-content-center mt-[15%]'>
+                  <div className='flex gap-1 place-content-center mt-[15%] sm:mb-20'>
         
                     <a href="" className='bg-gray-300 rounded-3xl p-3 text-blue-800'><FaArrowLeft className='text-2xl'/></a>
         
@@ -39,7 +39,7 @@ function ClientSay() {
                 
                 {/* right box */}
                 <div
-                  className="rounded-2xl bg-cover bg-center h-[600px] w-[45%]"
+                  className="rounded-2xl bg-cover bg-center h-[600px] w-[45%] sm:w-full"
                   style={{ backgroundImage: `url(${ze})` }}>
                 </div>
         
