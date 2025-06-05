@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBagShopping, FaLocationDot } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
@@ -13,6 +13,19 @@ function Header() {
   const handleClick = () => {
     setFlag(!flag);
   };
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to go to the next image
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % 2); // 5 images
+  };
+
+  // Auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
 
   return (
     <>
@@ -95,18 +108,119 @@ function Header() {
         </div>
 
         {/* small screen images */}
-        <div className='flex flex-wrap mt-20 w-full items-center justify-center md:hidden slider-container'>
-          <img src={img1} alt="Image 1" className="w-100 sm:w-48 h-auto object-cover" />
-          <img src={img2} alt="Image 2" className="w-100 sm:w-48 h-auto object-cover" />
-          <img src={img3} alt="Image 3" className="w-100 sm:w-48 h-auto object-cover" />
+        <div className="relative w-full mt-15 md:hidden">
+          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+
+        <div
+          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            currentIndex === 0 ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <div className="flex items-center place-content-center text-center">
+            <img
+            src={img1}
+            className="w-50"
+            alt="Slide 1"
+          /><img
+            src={img2}
+            className="w-50"
+            alt="Slide 1"
+          /><img
+            src={img3}
+            className="w-50"
+            alt="Slide 1"
+          />
+          </div>
+        </div>
+
+        <div
+          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            currentIndex === 1 ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <div className="flex items-center place-content-center text-center">
+            <img
+            src={img3}
+            className="w-50"
+            alt="Slide 2"
+          />
+          <img
+            src={img2}
+            className="w-50"
+            alt="Slide 1"
+          />
+          <img
+            src={img1}
+            className="w-50"
+            alt="Slide 1"
+          />
+          </div>
+        </div>
+
+          </div>
         </div>
         
         {/* big screen image*/}
-        <div className='hidden md:flex flex-wrap mt-20 w-full items-center justify-center'>
-          <img src={img1} alt="Image 1" className="w-80 object-cover" />
-          <img src={img2} alt="Image 2" className="w-80 object-cover" />
-          <img src={img3} alt="Image 3" className="w-80 object-cover" />
-          <img src={img1} alt="Image 1" className="w-80 object-cover" />
+        <div className='sm:hidden md:flex flex-wrap mt-10 w-full items-center justify-center'>
+          <div className="relative w-full mt-15">
+          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+
+        <div
+          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            currentIndex === 0 ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <div className="flex items-center place-content-center text-center gap-10">
+            <img
+            src={img1}
+            className="w-75"
+            alt="Slide 1"
+          /><img
+            src={img2}
+            className="w-75"
+            alt="Slide 1"
+          /><img
+            src={img3}
+            className="w-75"
+            alt="Slide 1"
+          /><img
+            src={img1}
+            className="w-75"
+            alt="Slide 1"
+          />
+          </div>
+        </div>
+
+        <div
+          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            currentIndex === 1 ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <div className="flex items-center place-content-center text-center gap-10">
+            <img
+            src={img3}
+            className="w-75"
+            alt="Slide 2"
+          />
+          <img
+            src={img2}
+            className="w-75"
+            alt="Slide 1"
+          />
+          <img
+            src={img1}
+            className="w-75"
+            alt="Slide 1"
+          /><img
+            src={img3}
+            className="w-75"
+            alt="Slide 1"
+          />
+          </div>
+        </div>
+
+          </div>
+        </div>
         </div>
         
       </div>
