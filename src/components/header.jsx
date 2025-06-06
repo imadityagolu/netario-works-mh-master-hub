@@ -108,7 +108,7 @@ function Header() {
         </div>
 
         {/* small screen images */}
-        <div className="relative w-full mt-15 md:hidden">
+        <div className="relative w-full mt-15 lg:hidden md:hidden">
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
 
         <div

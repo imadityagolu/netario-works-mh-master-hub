@@ -4,11 +4,13 @@ import { IoChatbubblesOutline } from "react-icons/io5";
 
 import c01 from '../image/c01.png';
 
+import Style from '../css/Vibration.module.css';
+
 function Selector() {
   return (
     <>
       {/* selector */}
-      <div className='mt-30 mb-12 px-4 sm:px-6 md:px-10'>
+      <div className='mt-30 mb-30 px-4 sm:px-6 md:px-10'>
 
         {/* header */}
         <div className='text-center'>
@@ -52,7 +54,17 @@ function Selector() {
 
           {/* center */}
           <div id="center" className='w-full md:w-1/3 flex justify-center'>
-            <img src={c01} className='w-full max-w-xs sm:max-w-sm md:max-w-md object-contain' alt="Masters in Me" />
+
+            <div className={Style.vibrant}>
+     
+              <div className={Style.ripple}></div>
+              <div className={Style.ripple}></div>
+              <div className={Style.ripple}></div>
+
+              <img src={c01} alt="image" />
+            
+            </div>
+
           </div>
 
           {/* right */}
