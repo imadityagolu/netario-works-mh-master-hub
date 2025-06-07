@@ -27,20 +27,20 @@
 }
 
 .ripple:nth-child(1) {
-  width: 400px;
-  height: 400px;
+  width: 240px;
+  height: 240px;
   animation-delay: 0s;
 }
 
 .ripple:nth-child(2) {
-  width: 480px;
-  height: 480px;
+  width: 320px;
+  height: 320px;
   animation-delay: 1s;
 }
 
 .ripple:nth-child(3) {
-  width: 560px;
-  height: 560px;
+  width: 400px;
+  height: 400px;
   animation-delay: 2s;
 }
 

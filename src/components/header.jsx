@@ -30,23 +30,23 @@ function Header() {
   return (
     <>
       {/* header */}
-      <div className='bg-gradient-to-br from-yellow-500 to-yellow-100 py-4 sm:py-8 px-4 sm:px-20'>
+      <div className='bg-gradient-to-br from-yellow-500 to-yellow-100 py-3 py-4 sm:px-6 sm:py-8 lg:px-12 xl:px-20'>
 
         {/* navbar */}
         <nav className='flex justify-between items-center'>
-          <h1 className="text-2xl sm:text-3xl text-white font-bold">MH. Master Hub</h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl text-white font-bold">MH. Master Hub</h1>
 
-          <div className='hidden md:flex gap-5 text-base sm:text-md'>
-            <a href="" className="hover:underline">Create Resume</a>
-            <a href="" className="hover:underline">Skillset</a>
-            <a href="" className="hover:underline">Partnered Job Board</a>
-            <a href="" className="hover:underline">Contact Us</a>
+          <div className='hidden md:flex sm:gap-2 md:gap-5 lg:gap-6 text-sm md:text-base lg:text-lg'>
+            <a href="" className="hover:none sm:text-sm md:text-md lg:text-xl">Create Resume</a>
+            <a href="" className="hover:none sm:text-sm md:text-md lg:text-xl">Skillset</a>
+            <a href="" className="hover:none sm:text-sm md:text-md lg:text-xl">Partnered Job Board</a>
+            <a href="" className="hover:none sm:text-sm md:text-md lg:text-xl">Contact Us</a>
           </div>
 
-          <div className='hidden md:flex mt-[-5px] rounded-3xl border border-white p-3 text-white hover:bg-white hover:text-black hover:border-white transition-colors'>
-            <a href="#" className='flex font-bold gap-2 items-center'>
+          <div className='hidden md:flex rounded-3xl border border-white lg:p-2 md:p-1 text-white hover:bg-white hover:text-black hover:border-white transition-colors'>
+            <a href="#" className='flex font-bold lg:gap-2 md:gap-1 md:pl-2 items-center text-sm md:text-xs'>
               Register Now 
-              <MdArrowOutward className='text-2xl sm:text-3xl bg-white text-blue-500 rounded-3xl p-1'/>
+              <MdArrowOutward className='text-xl md:text-xl bg-white text-blue-500 rounded-3xl p-1'/>
             </a>
           </div>
 
@@ -55,12 +55,12 @@ function Header() {
             onClick={handleClick}
           >
             {flag ? (
-              <div className="border rounded-lg p-1 transition-transform duration-300 text-white px-4 py-2 text-3xl">
+              <div className="border rounded-lg p-1 text-white px-3 py-1 text-2xl">
                 X
               </div>
             ) : (
-              <div className="border rounded-lg p-2 transition-transform duration-300 text-white">
-                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+              <div className="border rounded-lg p-2 text-white">
+                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em">
                   <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
                 </svg>
               </div>
@@ -70,66 +70,70 @@ function Header() {
 
         {/* navbar for small screen */}
         {flag && (
-          <div className='md:hidden flex flex-col gap-3 mt-4 text-base'>
+          <div className='md:hidden flex flex-col gap-2 mt-3 text-sm'>
             <a href="" className="m-2 hover:underline">Create Resume</a>
             <a href="" className="m-2 hover:underline">Skillset</a>
             <a href="" className="m-2 hover:underline">Partnered Job Board</a>
             <a href="" className="m-2 hover:underline">Contact Us</a>
             <a href="#" className='m-2 w-full sm:w-48 flex font-bold gap-2 items-center justify-center rounded-3xl border border-white p-3 text-white hover:bg-white hover:text-black hover:border-white transition-colors'>
               Register Now 
-              <MdArrowOutward className='text-2xl sm:text-3xl bg-white text-blue-500 rounded-3xl p-1'/>
+              <MdArrowOutward className='text-xl bg-white text-blue-500 rounded-3xl p-1'/>
             </a>
           </div>
         )}
 
         {/* description */}
         <div className='w-full text-center'>
-          <div className='flex w-full items-center mt-6 sm:mt-10 justify-center'>
-            <h1 className='flex w-64 sm:w-80 p-2 bg-white rounded-3xl justify-center text-center items-center text-sm sm:text-base'>
-              <FaBagShopping className="mr-2 text-lg sm:text-xl" />Your #1 Platform for Skill Sharing
+          <div className='flex w-full items-center mt-4 sm:mt-6 md:mt-8 justify-center'>
+            <h1 className='flex w-56 sm:w-72 md:w-80 p-2 bg-white rounded-3xl justify-center text-center items-center text-xs sm:text-sm md:text-base'>
+              <FaBagShopping className="mr-2 text-base sm:text-lg md:text-xl" />Your #1 Platform for Skill Sharing
             </h1>
           </div>
 
-          <h1 className='text-3xl sm:text-6xl md:text-6xl mt-6 sm:mt-8 text-blue-950 font-bold leading-tight'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-4 sm:mt-6 text-blue-950 font-bold leading-tight'>
             Showcase Your Mastery.
             <br />
             Get Connected
           </h1>
 
-          <h1 className='mt-4 sm:mt-5 text-base sm:text-xl px-4'>Create your profile, showcase your skills, and let employers find you.</h1>
+          <h1 className='mt-3 sm:mt-4 md:mt-5 text-sm sm:text-base md:text-lg lg:text-xl px-2 sm:px-4'>Create your profile, showcase your skills, and let employers find you.</h1>
 
-          <div className='flex w-full flex-col sm:flex-row text-center justify-center items-center mt-6 sm:mt-8 gap-2 px-4'>
-            <h1 className='flex w-full sm:w-[30rem] justify-center bg-white p-3 rounded-3xl text-sm sm:text-base'>
-              <FaSearch className='text-lg sm:text-2xl items-center mr-2' /> e.g. UX Designer | 
-              <FaLocationDot className='text-lg sm:text-2xl items-center mx-2' /> e.g. Liverpool, USA
+          <div className='flex w-full flex-col sm:flex-row text-center justify-center items-center mt-4 sm:mt-6 md:mt-8 gap-2 px-2 sm:px-4'>
+            <h1 className='flex w-full sm:w-80 md:w-112 lg:w-120 justify-center bg-white p-2 sm:p-3 rounded-3xl text-xs sm:text-sm md:text-base'>
+              <FaSearch className='text-base sm:text-lg md:text-xl items-center mr-2' /> e.g. UX Designer | 
+              <FaLocationDot className='text-base sm:text-lg md:text-xl items-center mx-2' /> e.g. Liverpool, USA
             </h1>
-            <span className='flex w-24 sm:w-24 justify-center bg-blue-500 p-3 rounded-3xl text-white text-sm sm:text-base mt-2 sm:mt-0'>Search</span>
+            <span className='flex w-20 sm:w-24 md:w-28 justify-center bg-blue-500 p-2 sm:p-3 rounded-3xl text-white text-xs sm:text-sm md:text-base mt-2 sm:mt-0'>Search</span>
           </div>
         </div>
 
         {/* small screen images */}
-        <div className="relative w-full mt-15 lg:hidden md:hidden">
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative w-full mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+          <div className="relative h-48 sm:h-56 md:h-72 lg:h-96 overflow-hidden rounded-lg">
 
         <div
           className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
             currentIndex === 0 ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div className="flex items-center place-content-center text-center">
+          <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-10">
             <img
             src={img1}
-            className="w-50"
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
             alt="Slide 1"
           /><img
             src={img2}
-            className="w-50"
-            alt="Slide 1"
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
+            alt="Slide 2"
           /><img
             src={img3}
-            className="w-50"
-            alt="Slide 1"
-          />
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
+            alt="Slide 3"
+          /><img
+            src={img1}
+            className="hidden md:block w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
+            alt="Slide 4"
+                />
           </div>
         </div>
 
@@ -138,89 +142,31 @@ function Header() {
             currentIndex === 1 ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div className="flex items-center place-content-center text-center">
+          <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-10">
             <img
             src={img3}
-            className="w-50"
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
             alt="Slide 2"
           />
           <img
             src={img2}
-            className="w-50"
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
             alt="Slide 1"
           />
           <img
             src={img1}
-            className="w-50"
-            alt="Slide 1"
-          />
-          </div>
-        </div>
-
-          </div>
-        </div>
-        
-        {/* big screen image*/}
-        <div className='sm:hidden md:flex flex-wrap mt-10 w-full items-center justify-center'>
-          <div className="relative w-full mt-15">
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-
-        <div
-          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-            currentIndex === 0 ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div className="flex items-center place-content-center text-center gap-10">
-            <img
-            src={img1}
-            className="w-75"
-            alt="Slide 1"
-          /><img
-            src={img2}
-            className="w-75"
-            alt="Slide 1"
-          /><img
-            src={img3}
-            className="w-75"
-            alt="Slide 1"
-          /><img
-            src={img1}
-            className="w-75"
-            alt="Slide 1"
-          />
-          </div>
-        </div>
-
-        <div
-          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-            currentIndex === 1 ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div className="flex items-center place-content-center text-center gap-10">
-            <img
-            src={img3}
-            className="w-75"
-            alt="Slide 2"
-          />
-          <img
-            src={img2}
-            className="w-75"
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
             alt="Slide 1"
           />
           <img
-            src={img1}
-            className="w-75"
-            alt="Slide 1"
-          /><img
-            src={img3}
-            className="w-75"
-            alt="Slide 1"
+          src={img3}
+          className="hidden md:block w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56"
+          alt="Slide 4"
           />
           </div>
         </div>
 
           </div>
-        </div>
         </div>
         
       </div>
