@@ -35,20 +35,20 @@ function FrequentQuestions() {
     <div className='py-20'>
 
       {/* header */}
-      <div className='flex justify-between px-25'>
+      <div className='flex justify-between lg:px-25 md:px-20 px-10'>
         <div>
-          <h1 className='text-4xl'>Frequently asked Questions</h1>
+          <h1 className='lg:text-4xl md:text-4xl text-2xl'>Frequently asked Questions</h1>
         </div>
       </div>
 
       {/* question box */}
-      <div className='flex px-10 mt-5 gap-5 justify-center'>
+      <div className='lg:flex md:flex px-10 mt-5 gap-5 justify-center'>
 
         {/* left box */}
-        <div className='w-[45%]'>
+        <div className='lg:w-[45%] md:w-[45%]'>
 
           {/* box 1*/}
-          <div className='flex border-1 rounded-3xl border-gray-100 p-5 gap-4'>
+          <div className='flex border-2 rounded-3xl border-gray-100 p-5 gap-4'>
 
             {/*serial no.*/}
             <div>
@@ -82,7 +82,7 @@ function FrequentQuestions() {
           </div>
 
           {/* box 2*/}
-          <div className='flex border-1 rounded-3xl border-gray-100 p-5 gap-4 mt-5'>
+          <div className='flex border-2 rounded-3xl border-gray-100 p-5 gap-4 mt-5'>
 
             {/*serial no.*/}
             <div>
@@ -114,7 +114,7 @@ function FrequentQuestions() {
           </div>
 
           {/* box 3*/}
-          <div className='flex border-1 rounded-3xl border-gray-100 p-5 gap-4 mt-5'>
+          <div className='flex border-2 rounded-3xl border-gray-100 p-5 gap-4 mt-5'>
 
             {/*serial no.*/}
             <div>
@@ -150,10 +150,10 @@ function FrequentQuestions() {
         </div>
         
         {/* right box */}
-        <div className='w-[45%]'>
+        <div className='lg:w-[45%] md:w-[45%]'>
 
           {/* box 4*/}
-          <div className='flex border-1 rounded-3xl border-gray-100 p-5 gap-4 bg-blue-200'>
+          <div className='flex border-2 rounded-3xl border-gray-100 p-5 gap-4 bg-blue-200'>
 
             {/*serial no.*/}
             <div>
@@ -185,7 +185,7 @@ function FrequentQuestions() {
           </div>
 
           {/* box 5*/}
-          <div className='flex border-1 rounded-3xl border-gray-100 p-5 gap-4 mt-5'>
+          <div className='flex border-2 rounded-3xl border-gray-100 p-5 gap-4 mt-5'>
 
             {/*serial no.*/}
             <div>

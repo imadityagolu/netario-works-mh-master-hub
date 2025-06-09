@@ -12,9 +12,13 @@ function Portfolios() {
             <div className='mb-20'>
         
               {/* portfolio header */}
-              <div className='flex justify-between px-20 mt-20'>
+              <div className='flex justify-between 
+              lg:px-20 lg:mt-20 
+              sm:px-10 
+              sm:mt-10 
+              px-5 mt-5'>
                 <div>
-                  <h1 className='text-3xl'>Top Talent portfolio Showcase</h1>
+                  <h1 className='lg:text-3xl md:text-2xl text-2xl mt-2'>Top Talent portfolio Showcase</h1>
                 </div>
                 <div className='flex mt-3 gap-1'>
                   <a href="" className='bg-gray-300 rounded-2xl p-2 text-blue-800'><FaArrowLeft /></a>

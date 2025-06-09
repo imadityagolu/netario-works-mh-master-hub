@@ -68,15 +68,18 @@ function Selector() {
           </div>
 
           {/* right */}
-          <div id="right" className='w-full md:w-1/3 flex flex-col gap-6'>
+          <div id="right" className='w-full md:w-1/4 flex flex-col gap-6'>
 
-            <div className='flex text-center items-center justify-center p-3 sm:p-4 shadow-xl rounded-3xl w-full'>
-              <div className='flex items-center justify-center'>
+            <div className='flex text-center items-center place-content-center p-3 sm:p-4 shadow-xl rounded-3xl w-full'>
+
+              <div className='flex text-center items-center place-content-center'>
                 <IoChatbubblesOutline className='text-4xl sm:text-5xl text-blue-900'/>
               </div>
-              <div className='text-left ml-3'>
-                <h1 className='text-xl sm:text-2xl mt-3 font-bold'>Networking Opportunities</h1>
+
+              <div className='text-center'>
+                <h1 className='lg:text-3xl sm:text-lg mt-3 font-bold'>Networking Opportunities</h1>
               </div>
+
             </div>
 
             <div className='text-center items-center place-content-center p-5 sm:p-6 shadow-xl rounded-3xl w-full'>

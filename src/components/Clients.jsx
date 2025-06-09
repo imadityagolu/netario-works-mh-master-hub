@@ -9,7 +9,7 @@ import p3 from '../image/p3.png';
 function Clients() {
     return (
         <>
-            <div className='bg-gray-100 pt-8 sm:pt-12 md:pt-15'>
+            <div className='bg-gray-100 pt-8 md:pt-15'>
 
               {/* header */}
               <div className='place-content-center items-center text-center px-4 sm:px-6'>
@@ -32,7 +32,7 @@ function Clients() {
               <div className='flex flex-col md:flex-row px-4 sm:px-20 mt-6 sm:mt-8 gap-4 sm:gap-5 justify-center'>
 
                 {/* left box */}
-                <div className='w-full md:w-[45%] flex flex-col'>
+                <div className='w-full md:w-[50%] flex flex-col'>
 
                   <div>
                     <h1 className='text-2xl sm:text-3xl font-bold'>How It Works</h1>
@@ -95,31 +95,40 @@ function Clients() {
                 </div>
                 
                 {/* right box */}
-                <div className='w-full md:w-[45%] flex flex-col gap-4 px-15'>
+                <div className='w-full md:w-[50%] flex flex-col gap-4'>
 
                   {/* image box 1 2 */}
-                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-0'>
+                  <div className='flex flex-col sm:flex-row 
+                  gap-2 sm:gap-0'>
 
                     {/* image 1 */}
-                    <div className='rounded-2xl w-full sm:w-50 h-48 sm:h-64 md:h-[300px] bg-cover bg-center inset-shadow-lg' style={{ backgroundImage: `url(${p1})` }}>
+                    <div className='rounded-2xl w-full bg-cover bg-center inset-shadow-lg h-60
+                    sm:w-70 sm:h-64 
+                    lg:h-80 lg:w-60' style={{ backgroundImage: `url(${p1})` }}>
                     </div>
                     
                     {/* image 2 */}
-                    <div className='rounded-2xl w-full sm:w-1/2 h-64 sm:h-80 md:h-[400px] bg-cover bg-center inset-shadow-lg' style={{ backgroundImage: `url(${p2})` }}>
+                    <div className='rounded-2xl w-full bg-cover bg-center inset-shadow-lg h-100
+                    sm:w-80 sm:h-80
+                    lg:h-130' style={{ backgroundImage: `url(${p2})` }}>
                     </div>
+
                   </div>
                   
                   {/* image 3 */}
-                  <div className='flex bg-white rounded-3xl p-3 items-center justify-center mt-0 sm:mt-[-10px] w-full'>
+                <div className='px-0 w-97 lg:w-70 md:w-55 ml-5'>
 
-                    <div className='rounded-2xl w-24 sm:w-60 md:w-60 h-16 sm:h-21 md:h-[90px] bg-cover bg-center inset-shadow-lg' style={{ backgroundImage: `url(${p3})` }}>
+                  <div className='flex bg-white rounded-3xl p-2 items-center justify-center lg:mt-[-160px] md:mt-[-110px] mt-[-60px] md:h-20'>
+
+                    <div className='rounded-2xl w-24 sm:w-60 md:w-60 h-16 sm:h-21 md:h-[90px] bg-no-repeat bg-size-[100%] bg-center inset-shadow-lg' style={{ backgroundImage: `url(${p3})` }}>
                     </div>
 
-                    <div className='ml-3 text-center sm:text-left'>
+                    <div className='m-3 text-left sm:text-left'>
                       <h1 className='text-blue-500 text-lg sm:text-xl font-bold'>10K+</h1>
                       <p className='text-sm sm:text-base text-gray-400'>Job Seekers</p>
                     </div>
                     
+                  </div>
                   </div>
 
                 </div>

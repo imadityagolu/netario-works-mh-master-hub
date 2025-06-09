@@ -8,15 +8,18 @@ import img2 from '../image/02.png';
 import img3 from '../image/03.png';
 
 function Header() {
+
+  // for dropdown menu
   const [flag, setFlag] = useState(false);
 
   const handleClick = () => {
     setFlag(!flag);
   };
 
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   // Function to go to the next image
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % 2); // 5 images
   };
@@ -30,13 +33,21 @@ function Header() {
   return (
     <>
       {/* header */}
-      <div className='bg-gradient-to-br from-yellow-500 to-yellow-100 py-3 py-4 sm:px-6 sm:py-8 lg:px-12 xl:px-20'>
+      <div className='
+      bg-gradient-to-br from-yellow-500 to-yellow-100 
+      sm:px-10 md:px-11 lg:px-30 
+      sm:py-8 md:py-8 lg:py-8'>
 
         {/* navbar */}
         <nav className='flex justify-between items-center'>
-          <h1 className="text-xl sm:text-2xl md:text-3xl text-white font-bold">MH. Master Hub</h1>
+          
+          <h1 className="text-white font-bold
+          md:text-3xl lg:text-3xl
+          ml-3">MH. Master Hub</h1>
 
-          <div className='hidden md:flex sm:gap-2 md:gap-5 lg:gap-6 text-sm md:text-base lg:text-lg'>
+          <div className='hidden md:flex 
+          sm:gap-2 md:gap-5 lg:gap-6 
+          text-sm md:text-base lg:text-lg'>
             <a href="" className="hover:none sm:text-sm md:text-md lg:text-xl">Create Resume</a>
             <a href="" className="hover:none sm:text-sm md:text-md lg:text-xl">Skillset</a>
             <a href="" className="hover:none sm:text-sm md:text-md lg:text-xl">Partnered Job Board</a>
@@ -51,11 +62,11 @@ function Header() {
           </div>
 
           <button 
-            className="text-2xl md:hidden cursor-pointer transition-transform duration-300" 
+            className="text-xl md:hidden cursor-pointer transition-transform duration-800 pr-2 mr-1 mt-3" 
             onClick={handleClick}
           >
             {flag ? (
-              <div className="border rounded-lg p-1 text-white px-3 py-1 text-2xl">
+              <div className="border rounded-lg p-1 text-white px-4 py-2 text-2xl transition-transform duration-300">
                 X
               </div>
             ) : (
@@ -66,15 +77,17 @@ function Header() {
               </div>
             )}
           </button>
+
         </nav>
 
         {/* navbar for small screen */}
         {flag && (
-          <div className='md:hidden flex flex-col gap-2 mt-3 text-sm'>
+          <div className='md:hidden flex flex-col gap-2 mt-3 text-sm transition-transform duration-800 pl-5 pr-9'>
             <a href="" className="m-2 hover:underline">Create Resume</a>
             <a href="" className="m-2 hover:underline">Skillset</a>
             <a href="" className="m-2 hover:underline">Partnered Job Board</a>
             <a href="" className="m-2 hover:underline">Contact Us</a>
+
             <a href="#" className='m-2 w-full sm:w-48 flex font-bold gap-2 items-center justify-center rounded-3xl border border-white p-3 text-white hover:bg-white hover:text-black hover:border-white transition-colors'>
               Register Now 
               <MdArrowOutward className='text-xl bg-white text-blue-500 rounded-3xl p-1'/>
@@ -107,7 +120,7 @@ function Header() {
           </div>
         </div>
 
-        {/* small screen images */}
+        {/* image slide */}
         <div className="relative w-full mt-6 sm:mt-8 md:mt-10 lg:mt-12">
           <div className="relative h-48 sm:h-56 md:h-72 lg:h-96 overflow-hidden rounded-lg">
 
@@ -170,6 +183,7 @@ function Header() {
         </div>
         
       </div>
+
     </>
   );
 }
