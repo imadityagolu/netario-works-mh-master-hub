@@ -10,14 +10,14 @@ function Footer() {
     <div className='flex justify-between bg-linear-to-br from-yellow-500 to-yellow-100 w-full
     lg:gap-15 lg:px-25 
     md:gap-5 md:px-10
-    px-5 gap-2 pt-8 pb-4'>
+    px-5 gap-1 pt-8 pb-4'>
 
       {/* information */}
-      <div className='lg:w-110 md:w-80 w-40'>
+      <div className='lg:w-110 md:w-80 w-20'>
 
       {/* info */}
       <div className=''>
-        <h1 className='lg:text-4xl md:text-3xl text-xl text-blue-500'>MH.Master Hub</h1>
+        <h1 className='lg:text-4xl md:text-3xl text-xl text-blue-500'>MH. Master Hub</h1>
 
         <br></br>
         <p className="lg:text-base md:text-base text-sm"><b>Corporate Head Office</b>: 3787 Jerry Dove Drive, Florence, South Carolina, 29501, United States.</p>
